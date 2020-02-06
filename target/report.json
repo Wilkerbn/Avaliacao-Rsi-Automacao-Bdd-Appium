@@ -1,0 +1,222 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 22484022100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que estou na tela aplicacao",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.que_estou_na_tela_aplicacao()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2354133400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicar na opcao de pesquisa",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.clicar_na_opcao_de_pesquisa()"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": ": Deve efetuar uma pesquisa de um produto válido",
+        "description": "",
+        "id": "consulta-de-produto-por-campo-de-pesquisa;:-deve-efetuar-uma-pesquisa-de-um-produto-válido",
+        "after": [
+          {
+            "result": {
+              "duration": 1286439000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeUsuarioStep.finaliza()"
+            }
+          },
+          {
+            "result": {
+              "duration": 20700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.finaliza()"
+            }
+          },
+          {
+            "result": {
+              "duration": 54500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaDeProdutoTelaPrincipalStep.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1133471700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "inserir a categoria de meu produto",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.inserir_a_categoria_de_meu_produto()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3894497500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selecionar um determinado produto",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.selecionar_um_determinado_produto()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 204683500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "devo visualizar o meu produto",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.devo_visualizar_o_meu_produto()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 8425362000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "que estou na tela aplicacao",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.que_estou_na_tela_aplicacao()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1246010200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicar na opcao de pesquisa",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.clicar_na_opcao_de_pesquisa()"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": ": Deve efetuar uma pesquisa de produto invalido",
+        "description": "",
+        "id": "consulta-de-produto-por-campo-de-pesquisa;:-deve-efetuar-uma-pesquisa-de-produto-invalido",
+        "after": [
+          {
+            "result": {
+              "duration": 704923100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CadastroDeUsuarioStep.finaliza()"
+            }
+          },
+          {
+            "result": {
+              "duration": 16300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.finaliza()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaDeProdutoTelaPrincipalStep.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1621537000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "inserir a categoria invalida de meu produto",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.inserir_a_categoria_invalida_de_meu_produto()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1088551200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "devo visualizar a mensagem de confirmacao",
+            "match": {
+              "location": "ConsultaDeProdutoCampoPesquisaStep.devo_visualizar_a_mensagem_de_confirmacao()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Consulta de produto por campo de pesquisa",
+    "description": "\r\nComo um usuário quero efetuar uma pesquisa de produto através do campo de pesquisa de produtos",
+    "id": "consulta-de-produto-por-campo-de-pesquisa",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/consultaDeProdutoCampoPesquisaStep.feature"
+  }
+]
