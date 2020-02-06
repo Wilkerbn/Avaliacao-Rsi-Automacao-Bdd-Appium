@@ -28,7 +28,7 @@ import cucumber.api.junit.Cucumber;
 		 * Html : Isso ira gerar um relatorio HTML no local mencionado.
 		 * Json : Este relatorio contem todas as informacoes no formato JSON, utilizado por ferramentas de terceiros como Jenkins.
 		 * Extend Report : Outro tipo de relatorio utilizado com informacoes inerentes aos testes executados.  */
-		plugin = {"pretty", "html:target/report-html", "json:target/report.json", "com.cucumber.listener.ExtentCucumberFormatter:target/report.html"},
+		plugin = {"pretty", "html:target/report-html", "json:target/report.json", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
 		
 		/* Altera o trecho do codigo para utilizacao do padrao CamelCase */
 		snippets = SnippetType.CAMELCASE,

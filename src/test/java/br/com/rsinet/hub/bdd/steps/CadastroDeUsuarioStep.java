@@ -18,8 +18,6 @@ import io.appium.java_client.android.AndroidDriver;
 public class CadastroDeUsuarioStep {
 	public static AndroidDriver<MobileElement> driver;
 	
-	
-	
 	@Dado("^que estou acessando a aplicacao$")
 	public void que_estou_acessando_a_aplicacao() {
 		driver = DriverFactory.getDriver();
@@ -129,10 +127,7 @@ public class CadastroDeUsuarioStep {
 		Assert.assertEquals("REGISTER", FormularioPage.usuarioJaExiste());
 	}
 	
-	@After
-	public void finaliza() {
-		DriverFactory.killDriver();
-	}
+	
 
 
 }

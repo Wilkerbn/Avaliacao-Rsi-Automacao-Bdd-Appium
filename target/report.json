@@ -17,7 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22484022100,
+              "duration": 9886343100,
               "status": "passed"
             },
             "line": 6,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 2354133400,
+              "duration": 1278210900,
               "status": "passed"
             },
             "line": 7,
@@ -49,29 +49,20 @@
         "after": [
           {
             "result": {
-              "duration": 1286439000,
+              "duration": 374077200,
               "status": "passed"
             },
             "match": {
-              "location": "CadastroDeUsuarioStep.finaliza()"
+              "location": "Hooks.afterCenario(Scenario)"
             }
           },
           {
             "result": {
-              "duration": 20700,
+              "duration": 688551900,
               "status": "passed"
             },
             "match": {
-              "location": "ConsultaDeProdutoCampoPesquisaStep.finaliza()"
-            }
-          },
-          {
-            "result": {
-              "duration": 54500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ConsultaDeProdutoTelaPrincipalStep.finaliza()"
+              "location": "Hooks.finaliza()"
             }
           }
         ],
@@ -80,7 +71,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1133471700,
+              "duration": 1595280200,
               "status": "passed"
             },
             "line": 10,
@@ -92,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 3894497500,
+              "duration": 2969941200,
               "status": "passed"
             },
             "line": 11,
@@ -104,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 204683500,
+              "duration": 52309900,
               "status": "passed"
             },
             "line": 12,
@@ -125,7 +116,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8425362000,
+              "duration": 7516888800,
               "status": "passed"
             },
             "line": 6,
@@ -137,7 +128,7 @@
           },
           {
             "result": {
-              "duration": 1246010200,
+              "duration": 1712425200,
               "status": "passed"
             },
             "line": 7,
@@ -157,29 +148,20 @@
         "after": [
           {
             "result": {
-              "duration": 704923100,
+              "duration": 186127800,
               "status": "passed"
             },
             "match": {
-              "location": "CadastroDeUsuarioStep.finaliza()"
+              "location": "Hooks.afterCenario(Scenario)"
             }
           },
           {
             "result": {
-              "duration": 16300,
+              "duration": 664378600,
               "status": "passed"
             },
             "match": {
-              "location": "ConsultaDeProdutoCampoPesquisaStep.finaliza()"
-            }
-          },
-          {
-            "result": {
-              "duration": 34900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "ConsultaDeProdutoTelaPrincipalStep.finaliza()"
+              "location": "Hooks.finaliza()"
             }
           }
         ],
@@ -188,7 +170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1621537000,
+              "duration": 1628613500,
               "status": "passed"
             },
             "line": 15,
@@ -200,7 +182,7 @@
           },
           {
             "result": {
-              "duration": 1088551200,
+              "duration": 1047126600,
               "status": "passed"
             },
             "line": 16,

@@ -33,14 +33,14 @@ formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.que_estou_na_tela_aplicacao()"
 });
 formatter.result({
-  "duration": 22484022100,
+  "duration": 9886343100,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.clicar_na_opcao_de_pesquisa()"
 });
 formatter.result({
-  "duration": 2354133400,
+  "duration": 1278210900,
   "status": "passed"
 });
 formatter.scenario({
@@ -70,33 +70,29 @@ formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.inserir_a_categoria_de_meu_produto()"
 });
 formatter.result({
-  "duration": 1133471700,
+  "duration": 1595280200,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.selecionar_um_determinado_produto()"
 });
 formatter.result({
-  "duration": 3894497500,
+  "duration": 2969941200,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.devo_visualizar_o_meu_produto()"
 });
 formatter.result({
-  "duration": 204683500,
+  "duration": 52309900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1286439000,
+  "duration": 374077200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20700,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 54500,
+  "duration": 688551900,
   "status": "passed"
 });
 formatter.background({
@@ -120,14 +116,14 @@ formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.que_estou_na_tela_aplicacao()"
 });
 formatter.result({
-  "duration": 8425362000,
+  "duration": 7516888800,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.clicar_na_opcao_de_pesquisa()"
 });
 formatter.result({
-  "duration": 1246010200,
+  "duration": 1712425200,
   "status": "passed"
 });
 formatter.scenario({
@@ -152,26 +148,22 @@ formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.inserir_a_categoria_invalida_de_meu_produto()"
 });
 formatter.result({
-  "duration": 1621537000,
+  "duration": 1628613500,
   "status": "passed"
 });
 formatter.match({
   "location": "ConsultaDeProdutoCampoPesquisaStep.devo_visualizar_a_mensagem_de_confirmacao()"
 });
 formatter.result({
-  "duration": 1088551200,
+  "duration": 1047126600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 704923100,
+  "duration": 186127800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 34900,
+  "duration": 664378600,
   "status": "passed"
 });
 });

@@ -43,10 +43,7 @@ public class ConsultaDeProdutoTelaPrincipalStep {
 		Assert.assertTrue(ProdutoPage.confirmaProdutoEsgotado().contains("SOLD OUT"));	
 	}
 	
-	@After
-	public void finaliza() {
-		DriverFactory.killDriver();
-	}
+
 
 
 }

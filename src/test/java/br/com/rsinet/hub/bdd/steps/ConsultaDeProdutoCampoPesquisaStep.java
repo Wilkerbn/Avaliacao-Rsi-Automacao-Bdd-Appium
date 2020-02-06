@@ -54,9 +54,6 @@ public class ConsultaDeProdutoCampoPesquisaStep {
 		Assert.assertTrue(ProdutoPage.confirmaProdutoInvalidoSelecionado().contains("No results for"));
 	}
 	
-	@After
-	public void finaliza() {
-		DriverFactory.killDriver();
-	}
+
 
 }
