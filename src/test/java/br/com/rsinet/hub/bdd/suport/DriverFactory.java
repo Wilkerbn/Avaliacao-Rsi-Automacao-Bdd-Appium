@@ -32,8 +32,8 @@ public class DriverFactory  {
 //		desiredCapabilities.setCapability("automationName", "uiautomator2");
 		desiredCapabilities.setCapability("appPackage", "com.Advantage.aShopping");
 		desiredCapabilities.setCapability("appActivity", "com.Advantage.aShopping.SplashActivity");
-		desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
-//		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\wilker.nogueira\\eclipse-workspace-automacao\\appium-advantage\\src\\main\\resources\\apk\\Advantage+demo+2_0.apk");
+		desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "120");
+//		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\Users\wilker.nogueira\eclipse-workspace-automacao\avaliacao-automacao-bdd-appium-hub\apk\Advantage+demo+2_0.apk");
 		desiredCapabilities.setCapability("unicodeKeyboard", true);   
 		desiredCapabilities.setCapability("resetKeyboard", true);
 

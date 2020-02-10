@@ -21,8 +21,9 @@ public class Hooks {
 	@After(order = 1)
 	public void afterCenario(Scenario scenario) {
 		
+		
 		File screenshot = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
-		String caminho = System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + scenario + "-"
+		String caminho = System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/" + scenario.getName() + "-"
 				+ Generator.dataHoraParaArquivo() + ".png";
 		try {
 			FileUtils.copyFile(screenshot, new File(caminho));

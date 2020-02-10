@@ -42,12 +42,6 @@ public class FormularioPage {
 		return elemento;
 	}
 	
-	public static TouchAction scrollNoForm() {
-		TouchAction scroll = new TouchAction(getDriver());
-		scroll.press(PointOption.point(1059, 1698)).moveTo(PointOption.point(1059, 300)).perform();
-		return scroll;
-	}
-	
 	public static WebElement campoTelefone() {
 		elemento = getDriver().findElementByXPath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText\r\n");
 		return elemento;

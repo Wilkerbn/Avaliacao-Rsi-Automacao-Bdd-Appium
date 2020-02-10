@@ -1,8 +1,10 @@
 package br.com.rsinet.hub.bdd.steps;
 
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 import br.com.rsinet.hub.bdd.utility.Constant;
+import br.com.rsinet.hub.bdd.pages.BasePage;
 import br.com.rsinet.hub.bdd.pages.FormularioPage;
 import br.com.rsinet.hub.bdd.pages.HomePage;
 import br.com.rsinet.hub.bdd.pages.LoginPage;
@@ -16,7 +18,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 
 public class CadastroDeUsuarioStep {
-	public static AndroidDriver<MobileElement> driver;
+	private static AndroidDriver<MobileElement> driver;
 	
 	@Dado("^que estou acessando a aplicacao$")
 	public void que_estou_acessando_a_aplicacao() {
@@ -26,6 +28,7 @@ public class CadastroDeUsuarioStep {
 	@Quando("^clicar no menu lateral$")
 	public void clicar_no_menu_lateral() throws Exception  {
 		HomePage.menuLateral().click();
+
 	}
 
 	@Quando("^clicar em login$")
@@ -72,7 +75,7 @@ public class CadastroDeUsuarioStep {
 	public void preencher_meu_ultimo_nome(String ultimoNome)  {
 		FormularioPage.campoUltimoNome().click();
 		FormularioPage.campoUltimoNome().sendKeys(ultimoNome);
-		FormularioPage.scrollNoForm();
+		BasePage.scrollDown(0.8, 0.2);
 	}
 
 	@Quando("^preencher meu numero de telefone \"([^\"]*)\"$")
@@ -117,8 +120,8 @@ public class CadastroDeUsuarioStep {
 	}
 
 	@Então("^devo receber a informacao \"([^\"]*)\"$")
-	public void devo_receber_a_informacao(String informacaoEsperada)  {
-		Assert.assertEquals(informacaoEsperada, HomePage.usuarioCadastrado());
+	public void devo_receber_a_informacao(String apelidoUsuario)  {
+		Assert.assertEquals(apelidoUsuario, HomePage.usuarioCadastrado());
 	
 	}
 	
@@ -126,8 +129,5 @@ public class CadastroDeUsuarioStep {
 	public void devo_receber_a_informacao_invalida(String informacaoEsperada)  {
 		Assert.assertEquals("REGISTER", FormularioPage.usuarioJaExiste());
 	}
-	
-	
-
 
 }

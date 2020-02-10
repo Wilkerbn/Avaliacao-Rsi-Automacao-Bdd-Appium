@@ -14,8 +14,8 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		/* Localiza meu pacote com as features */
-		features = "src/test/resources/features/consultaDeProdutoCampoPesquisaStep.feature", //Forma utilizada para testar feature separadamente.
-		//features = "classpath:features", 
+		//features = "src/test/resources/features/ConsultaDeProdutoCampoPesquisa.feature", //Forma utilizada para testar feature separadamente.
+		features = "classpath:features", 
 		
 		/* Informa o pacote onde esta adicionado as classes a serem executadas*/
 		glue = "br.com.rsinet.hub.bdd.steps", 
@@ -25,10 +25,9 @@ import cucumber.api.junit.Cucumber;
 		
 		/* Plugins adicionais 
 		 * Pretty : Imprime a fonte Gherkin com cores adicionais e empilha os tracos para erros. 
-		 * Html : Isso ira gerar um relatorio HTML no local mencionado.
 		 * Json : Este relatorio contem todas as informacoes no formato JSON, utilizado por ferramentas de terceiros como Jenkins.
 		 * Extend Report : Outro tipo de relatorio utilizado com informacoes inerentes aos testes executados.  */
-		plugin = {"pretty", "html:target/report-html", "json:target/report.json", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
+		plugin = {"pretty", "json:target/cucumber-reports/json-report.json", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/extent-report.html"},
 		
 		/* Altera o trecho do codigo para utilizacao do padrao CamelCase */
 		snippets = SnippetType.CAMELCASE,
@@ -42,15 +41,15 @@ import cucumber.api.junit.Cucumber;
 		)
 public class TestRunner {
 	@AfterClass
-	/* Executa a leitura das configura��es do extends report */
+	/* Executa a leitura das configuracoes do extends report */
 	public static void writeExtentReport() {
-		/* Informa o caminho onde est� minhas configura��es em XML do Extend Report */
+		/* Informa o caminho onde esta localizado minhas configuracoes em XML do Extend Report */
 		Reporter.loadXMLConfig(new File("src/test/resources/configs/extension-config.xml"));
 		
 		/* Informa qual o sistema foi utilizado para efetuar os testes */
 		Reporter.setSystemInfo("OS", "Windows10");
 		
-		/* Informa o nome do analista no relat�rio */
+		/* Informa o nome do analista no relatorio */
 		Reporter.setSystemInfo("Tester Name", "Wilker");
 		
 	}

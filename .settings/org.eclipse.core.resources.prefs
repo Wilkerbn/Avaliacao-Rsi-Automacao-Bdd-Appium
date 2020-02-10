@@ -1,5 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/test/resources/features/cadastroDeUsuarioStep.feature=UTF-8
-encoding//src/test/resources/features/consultaDeProdutoCampoPesquisaStep.feature=UTF-8
-encoding//src/test/resources/features/consultaDeProdutoTelaPrincipalStep.feature=UTF-8
-encoding//target/report.html=US-ASCII
+encoding//src/test/resources/features/CadastroDeUsuario.feature=UTF-8
+encoding//src/test/resources/features/ConsultaDeProdutoCampoPesquisa.feature=UTF-8
+encoding//src/test/resources/features/ConsultaDeProdutoTelaPrincipal.feature=UTF-8
