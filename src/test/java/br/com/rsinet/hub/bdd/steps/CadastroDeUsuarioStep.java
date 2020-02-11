@@ -75,7 +75,7 @@ public class CadastroDeUsuarioStep {
 	public void preencher_meu_ultimo_nome(String ultimoNome)  {
 		FormularioScreen.campoUltimoNome().click();
 		FormularioScreen.campoUltimoNome().sendKeys(ultimoNome);
-		BaseScreen.scrollDown(0.8, 0.2);
+		BaseScreen.scrollDown(0.9, 0.1);
 	}
 
 	@Quando("^preencher meu numero de telefone \"([^\"]*)\"$")

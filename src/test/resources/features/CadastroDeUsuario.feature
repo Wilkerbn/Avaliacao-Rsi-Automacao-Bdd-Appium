@@ -29,7 +29,7 @@ Esquema do Cenário: Cadastro Valido
     
 Exemplos: 
       | apelidoUsuario       | email                         | senha     | confirmaSenha  |  nome       | ultimoNome  | telefone    | pais     |  estado         | endereco          | cidade      | cep       | 
-      | Wilke0062            | wilker.bn@hotmail.com         | Wbn000001 | Wbn000001      |  Wilker     |	Nogueira	  | 11911111111 | Brazil   |  SP             | R. Autonomistas 1 | Osasco      | 11111-111 | 
+      | Wilke0065            | wilker.bn@hotmail.com         | Wbn000001 | Wbn000001      |  Wilker     |	Nogueira	  | 11911111111 | Brazil   |  SP             | R. Autonomistas 1 | Osasco      | 11111-111 | 
  
 Esquema do Cenário: Cadastro Invalido
     E preencher meu nome de usuario "<apelidoUsuario>"
