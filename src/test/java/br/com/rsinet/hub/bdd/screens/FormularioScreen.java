@@ -1,4 +1,4 @@
-package br.com.rsinet.hub.bdd.pages;
+package br.com.rsinet.hub.bdd.screens;
 
 import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
 
@@ -8,7 +8,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class FormularioPage {
+public class FormularioScreen {
 	
 	private static WebElement elemento = null;
 	

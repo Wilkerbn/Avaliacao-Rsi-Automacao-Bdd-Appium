@@ -1,10 +1,10 @@
-package br.com.rsinet.hub.bdd.pages;
+package br.com.rsinet.hub.bdd.screens;
 
 import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
 
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+public class LoginScreen {
 	
 	private static WebElement elemento = null;
 	

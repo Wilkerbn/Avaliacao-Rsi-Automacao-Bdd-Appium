@@ -1,4 +1,4 @@
-package br.com.rsinet.hub.bdd.pages;
+package br.com.rsinet.hub.bdd.screens;
 
 import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.MobileElement;
 
-public class HomePage {
+public class HomeScreen {
 	private static WebElement elemento = null;
 	
 	

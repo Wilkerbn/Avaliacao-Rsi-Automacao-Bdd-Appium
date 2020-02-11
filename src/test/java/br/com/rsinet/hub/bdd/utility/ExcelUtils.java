@@ -18,7 +18,7 @@ public class ExcelUtils {
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFCell Cell;
 
-	/** Método que define o caminho  e abre o arquivo do Excel */
+	/** Metodo que define o caminho  e abre o arquivo do Excel */
 	public static void setExcelFile(String Path, String SheetName) throws Exception {
 
 		try {
@@ -34,7 +34,7 @@ public class ExcelUtils {
 		}
 	}
 
-	/** Método que faz a leitura da célula do arquivo do Excel, para isso deve ser informado os parâmetros linha e coluna */
+	/** Metodo que faz a leitura da celula do arquivo do Excel, para isso deve ser informado os parametros linha e coluna */
 	public static String getCellData(int RowNum, int ColNum) throws Exception {
 
 		try {

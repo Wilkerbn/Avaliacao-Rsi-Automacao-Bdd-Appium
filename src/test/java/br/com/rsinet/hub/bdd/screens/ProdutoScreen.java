@@ -1,12 +1,16 @@
-package br.com.rsinet.hub.bdd.pages;
+package br.com.rsinet.hub.bdd.screens;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
 
-public class ProdutoPage {
+public class ProdutoScreen {
 	private static WebElement elemento = null;
 	
 	public static WebElement selecionaProduto(String produto) {
