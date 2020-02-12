@@ -1,5 +1,5 @@
 #language:pt
-Funcionalidade: Consulta de produto por campo de pesquisa 
+Funcionalidade: Consulta de produto campo de pesquisa 
   
   Como um usuário quero efetuar uma pesquisa de produto através do campo de pesquisa de produtos
 Contexto:

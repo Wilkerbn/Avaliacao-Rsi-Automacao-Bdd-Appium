@@ -1,14 +1,8 @@
 package br.com.rsinet.hub.bdd.screens;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
-
 import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
+
+import org.openqa.selenium.WebElement;
 
 public class ProdutoScreen {
 	private static WebElement elemento = null;
@@ -18,8 +12,8 @@ public class ProdutoScreen {
 		return elemento;
 	}
 	
-	public static void selecionaProdutoComScroll(AndroidDriver driver, String visibleText) {
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+ visibleText + "\").instance(0))").click();
+	public static void selecionaProdutoComScroll(String visibleText) {
+		getDriver().findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+ visibleText + "\").instance(0))").click();
 	}
 	
 	public static String confirmaProdutoSelecionado(String texto) {
@@ -39,7 +33,4 @@ public class ProdutoScreen {
 		String textoProdutoEsgotado = campoProdutoEsgotado.getText();
 		return textoProdutoEsgotado;
 	}
-	
-	
-
 }

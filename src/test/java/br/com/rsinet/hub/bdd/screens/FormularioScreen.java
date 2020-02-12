@@ -4,12 +4,7 @@ import static br.com.rsinet.hub.bdd.suport.DriverFactory.getDriver;
 
 import org.openqa.selenium.WebElement;
 
-import io.appium.java_client.TouchAction;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.touch.offset.PointOption;
-
 public class FormularioScreen {
-	
 	private static WebElement elemento = null;
 	
 	public static WebElement campoApelido() throws Exception {
@@ -52,8 +47,8 @@ public class FormularioScreen {
 		return elemento;
 	}
 	
-	public static void selecionaPais(AndroidDriver driver, String visibleText) {
-		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+ visibleText + "\").instance(0))").click();
+	public static void selecionaPais(String visibleText) {
+		getDriver().findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+ visibleText + "\").instance(0))").click();
 	}
 	
 	public static WebElement campoEstado() {

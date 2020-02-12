@@ -12,9 +12,7 @@ public class BaseScreen{
 	public static void scrollDown(double inicio, double fim) {
 	       
         Dimension size = getDriver().manage().window().getSize();
-       
         int x = size.width / 2;
-       
         int yInicial = (int) (size.height * inicio);
         int yFinal = (int) (size.height * fim);
        
@@ -25,11 +23,11 @@ public class BaseScreen{
         .release().perform();
     }
 	
-	
-//	public static TouchAction scrollNoForm() {
-//		TouchAction scroll = new TouchAction(getDriver());
-//		scroll.press(PointOption.point(1059, 1698)).moveTo(PointOption.point(1059, 300)).perform();
-//		return scroll;
-//	}
-	
 }
+
+//Outra forma de utilizar o Scroll
+//public static TouchAction scrollNoForm() {
+//TouchAction scroll = new TouchAction(getDriver());
+//scroll.press(PointOption.point(1059, 1698)).moveTo(PointOption.point(1059, 300)).perform();
+//return scroll;
+//}

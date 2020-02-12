@@ -1,28 +1,23 @@
 package br.com.rsinet.hub.bdd.steps;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
-import br.com.rsinet.hub.bdd.utility.Constant;
 import br.com.rsinet.hub.bdd.screens.BaseScreen;
 import br.com.rsinet.hub.bdd.screens.FormularioScreen;
 import br.com.rsinet.hub.bdd.screens.HomeScreen;
 import br.com.rsinet.hub.bdd.screens.LoginScreen;
 import br.com.rsinet.hub.bdd.suport.DriverFactory;
-import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 
 
 public class CadastroDeUsuarioStep {
-	private static AndroidDriver<MobileElement> driver;
+	
 	
 	@Dado("^que estou acessando a aplicacao$")
 	public void que_estou_acessando_a_aplicacao() {
-		driver = DriverFactory.getDriver();
+		DriverFactory.getDriver();
 	}
 
 	@Quando("^clicar no menu lateral$")
@@ -87,7 +82,7 @@ public class CadastroDeUsuarioStep {
 	@Quando("^selecionar meu pais \"([^\"]*)\"$")
 	public void selecionar_meu_pais(String pais)  {
 		FormularioScreen.campoPais().click();
-		FormularioScreen.selecionaPais(driver, "Brazil");
+		FormularioScreen.selecionaPais("Brazil");
 	}
 
 	@Quando("^preencher meu estado \"([^\"]*)\"$")
