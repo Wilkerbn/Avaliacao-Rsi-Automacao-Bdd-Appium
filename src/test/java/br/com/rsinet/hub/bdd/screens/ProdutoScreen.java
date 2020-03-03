@@ -16,7 +16,8 @@ public class ProdutoScreen {
 		getDriver().findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""+ visibleText + "\").instance(0))").click();
 	}
 	
-	public static String confirmaProdutoSelecionado(String texto) {
+	public static String confirmaProdutoSelecionado(String texto) throws Exception {
+		Thread.sleep(100);
 		WebElement produtoSelecionadoTexto = getDriver().findElementByXPath("//*[@text='"+ texto +"']");
 		String produtoSelecionado = produtoSelecionadoTexto.getText();
 		return produtoSelecionado;

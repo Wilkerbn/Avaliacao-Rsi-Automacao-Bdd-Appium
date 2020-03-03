@@ -13,7 +13,6 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		/* Localiza meu pacote com as features */
 		//features = "src/test/resources/features/ConsultaDeProdutoCampoPesquisa.feature", //Forma utilizada para testar feature separadamente.
 		features = "classpath:features", 
 		

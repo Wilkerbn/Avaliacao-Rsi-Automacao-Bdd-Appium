@@ -17,7 +17,6 @@ public class CadastroDeUsuarioStep {
 	
 	@Dado("^que estou acessando a aplicacao$")
 	public void que_estou_acessando_a_aplicacao() {
-		DriverFactory.getDriver();
 	}
 
 	@Quando("^clicar no menu lateral$")

@@ -13,7 +13,6 @@ public class ConsultaDeProdutoTelaPrincipalStep {
 
 	@Dado("^que estou na aplicacao$")
 	public void que_estou_na_aplicacao() throws Throwable {
-		DriverFactory.getDriver();
 	}
 
 	@Quando("^clicar na categoria do produto \"([^\"]*)\"$")
@@ -27,7 +26,7 @@ public class ConsultaDeProdutoTelaPrincipalStep {
 	}
 
 	@Então("^devo visualizar a pagina com meu produto em estoque \"([^\"]*)\"$")
-	public void devo_visualizar_a_pagina_com_meu_produto_em_estoque(String confirmaProduto) {
+	public void devo_visualizar_a_pagina_com_meu_produto_em_estoque(String confirmaProduto) throws Exception {
 		Assert.assertEquals(confirmaProduto, ProdutoScreen.confirmaProdutoSelecionado("HP ENVY - 17T TOUCH LAPTOP"));
 
 	}

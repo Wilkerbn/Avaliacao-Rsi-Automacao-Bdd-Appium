@@ -14,7 +14,6 @@ public class ConsultaDeProdutoCampoPesquisaStep extends Constant {
 
 	@Dado("^que estou na tela aplicacao$")
 	public void que_estou_na_tela_aplicacao() throws Exception {
-		DriverFactory.getDriver();
 		Constant.recebeDadosDoExcel("Produtos");
 	}
 
