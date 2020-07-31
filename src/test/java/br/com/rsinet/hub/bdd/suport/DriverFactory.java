@@ -24,6 +24,7 @@ public class DriverFactory  {
 
 	
 	private static void createDriver() {
+
 		DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 		desiredCapabilities.setCapability("platformName", "Android");
 		desiredCapabilities.setCapability("deviceName", "emulator-5554");
@@ -34,7 +35,7 @@ public class DriverFactory  {
 		desiredCapabilities.setCapability("appActivity", "com.Advantage.aShopping.SplashActivity");
 		desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "120");
 //		desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\Users\wilker.nogueira\eclipse-workspace-automacao\avaliacao-automacao-bdd-appium-hub\apk\Advantage+demo+2_0.apk");
-		desiredCapabilities.setCapability("unicodeKeyboard", true);   
+		desiredCapabilities.setCapability("unicodeKeyboard", true);
 		desiredCapabilities.setCapability("resetKeyboard", true);
 
 		try {

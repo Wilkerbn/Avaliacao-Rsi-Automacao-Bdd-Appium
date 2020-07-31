@@ -20,9 +20,8 @@ public class CadastroDeUsuarioStep {
 	}
 
 	@Quando("^clicar no menu lateral$")
-	public void clicar_no_menu_lateral() throws Exception  {
+	public void clicar_no_menu_lateral()   {
 		HomeScreen.menuLateral().click();
-
 	}
 
 	@Quando("^clicar em login$")
@@ -31,12 +30,12 @@ public class CadastroDeUsuarioStep {
 	}
 
 	@Quando("^clicar em criar uma conta$")
-	public void clicar_em_criar_uma_conta() throws Exception  {
+	public void clicar_em_criar_uma_conta() throws Exception {
 		LoginScreen.botaoCriarNovaConta().click();
 	}
 
 	@Quando("^preencher meu nome de usuario \"([^\"]*)\"$")
-	public void preencher_meu_nome_de_usuario(String apelidoUsuario) throws Exception  {
+	public void preencher_meu_nome_de_usuario(String apelidoUsuario) throws Exception {
 		FormularioScreen.campoApelido().click();
 		FormularioScreen.campoApelido().sendKeys(apelidoUsuario);
 	}
@@ -116,7 +115,6 @@ public class CadastroDeUsuarioStep {
 	@Então("^devo receber a informacao \"([^\"]*)\"$")
 	public void devo_receber_a_informacao(String apelidoUsuario)  {
 		Assert.assertEquals(apelidoUsuario, HomeScreen.usuarioCadastrado());
-	
 	}
 	
 	@Então("^devo receber a informacao invalida \"([^\"]*)\"$")

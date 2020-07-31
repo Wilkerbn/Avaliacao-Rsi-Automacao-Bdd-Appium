@@ -5,7 +5,7 @@ Funcionalidade: Cadastro de usuario
   Para que eu possa ter meu cadastro no site 
 
 Contexto: 
-		Dado que estou acessando a aplicacao
+    Dado que estou acessando a aplicacao
     Quando clicar no menu lateral
     E clicar em login
     E clicar em criar uma conta
@@ -49,4 +49,4 @@ Esquema do Cenário: Cadastro Invalido
 		
 Exemplos:
 			| apelidoUsuario       | email                         | senha     | confirmaSenha  |  nome       | ultimoNome  | telefone    | pais     |  estado         | endereco          | cidade      | cep       | informacaoEsperada       |
-      | Wilkerbn911          | wilker.bn@hotmail.com         | Wbn000001 | Wbn000001      |  Wilker     |	Nogueira	  | 11911111111 | Brazil   |  SP             | R. Autonomistas 1 | Osasco      | 11111-111 | User name already exists	|
+            | Wilkerbn911          | wilker.bn@hotmail.com         | Wbn000001 | Wbn000001      |  Wilker     |	Nogueira	  | 11911111111 | Brazil   |  SP             | R. Autonomistas 1 | Osasco      | 11111-111 | User name already exists	|

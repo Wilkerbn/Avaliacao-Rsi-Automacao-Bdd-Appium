@@ -3,8 +3,8 @@ Funcionalidade: Consulta de produto campo de pesquisa
   
   Como um usuário quero efetuar uma pesquisa de produto através do campo de pesquisa de produtos
 Contexto:
-		 Dado que estou na tela aplicacao
-		 Quando clicar na opcao de pesquisa
+     Dado que estou na tela aplicacao
+	 Quando clicar na opcao de pesquisa
 
 Cenário: Produto Lupa Valido
      E inserir a categoria de meu produto 
